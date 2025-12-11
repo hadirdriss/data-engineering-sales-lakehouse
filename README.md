@@ -133,3 +133,5 @@ The Power BI report includes:
 
 These visuals provide clear business insights on sales performance across countries and products.
 
+![Power BI Dashboard](data-engineering-sales-lakehouse/diagrams/powerbi_dashboard.jpg)
+
