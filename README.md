@@ -81,7 +81,8 @@ total_sales
 total_qty
 
 ### Code (Bronze → Silver → Gold)
-📘 Bronze – Ingestion
+
+**📘 Bronze – Ingestion**
 ```
 df_bronze = (
     spark.read
@@ -93,3 +94,42 @@ df_bronze = (
 
 df_bronze.write.mode("overwrite").saveAsTable("demo_catalog.raw.bronze_sales")
 ```
+**📙 Silver – Cleaning & Transformations**
+```
+from pyspark.sql.functions import col, to_date
+
+df_silver = (
+    df_bronze
+    .withColumn("order_date", to_date(col("order_date"), "yyyy-MM-dd"))
+    .withColumn("total", col("price") * col("quantity"))
+    .dropna()
+)
+
+df_silver.write.mode("overwrite").saveAsTable("demo_catalog.raw.silver_sales")
+```
+**📒 Gold – Business Aggregations**
+
+```
+CREATE OR REPLACE TABLE demo_catalog.raw.gold_sales AS
+SELECT
+    country,
+    product,
+    order_date,
+    SUM(total) AS total_sales,
+    SUM(quantity) AS total_qty
+FROM demo_catalog.raw.silver_sales
+GROUP BY country, product, order_date;
+```
+### 📊 Power BI Dashboard
+The Power BI report includes:
+
+📌 Total Sales by Country
+
+📌 Revenue Distribution by Product
+
+📌 Total Quantity by Country
+
+📌 Transaction Details Table
+
+These visuals provide clear business insights on sales performance across countries and products.
+
