@@ -80,7 +80,7 @@ data-engineering-sales-lakehouse/
 
   Total_qty
 
-### <img width="8" height="6" alt="image" src="https://github.com/user-attachments/assets/c7e8fa07-596e-48f9-a741-7e2acd1f0149" /> Code (Bronze → Silver → Gold)
+### <img width="80" height="60" alt="image" src="https://github.com/user-attachments/assets/c7e8fa07-596e-48f9-a741-7e2acd1f0149" /> Code (Bronze → Silver → Gold)
 
 **📘 Bronze – Ingestion**
 ```
