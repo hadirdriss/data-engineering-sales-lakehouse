@@ -68,17 +68,17 @@ data-engineering-sales-lakehouse/
 
 - Aggregation by:
 
-──Country
+  Country
 
-product
+  Product
 
-order_date
+  Order_date
 
 - Metrics:
 
-total_sales
+  Total_sales
 
-total_qty
+  Total_qty
 
 ### Code (Bronze → Silver → Gold)
 
