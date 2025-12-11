@@ -6,3 +6,19 @@ The goal is to build an end-to-end ETL pipeline (Bronze → Silver → Gold) tha
 
 Architecture
 ![Architecture](data-engineering-sales-lakehouse/diagrams/architecture.jpg)
+
+🛠 Technologies Used
+
+Databricks
+
+PySpark
+
+SQL
+
+Delta Lake
+
+Power BI
+
+Lakehouse Architecture
+
+Data Visualization
