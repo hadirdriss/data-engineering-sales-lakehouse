@@ -80,7 +80,7 @@ data-engineering-sales-lakehouse/
 
   Total_qty
 
-### Code (Bronze → Silver → Gold)
+### <img width="820" height="614" alt="image" src="https://github.com/user-attachments/assets/c7e8fa07-596e-48f9-a741-7e2acd1f0149" /> Code (Bronze → Silver → Gold)
 
 **📘 Bronze – Ingestion**
 ```
@@ -135,3 +135,11 @@ These visuals provide clear business insights on sales performance across countr
 
 ![Power BI Dashboard](data-engineering-sales-lakehouse/diagrams/powerbi_dashboard.jpg)
 
+### 📬 Contact
+
+👤 Your Name
+📧 Email : hadirdriss6@gmail.com
+
+💼 GitHub : https://github.com/hadirdriss
+
+🔗 LinkedIn : https://www.linkedin.com/in/hadir-driss-287202206/
