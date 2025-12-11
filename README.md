@@ -23,7 +23,7 @@ Architecture
 - Lakehouse Architecture
 
 - Data Visualization
-- 
+
 ## 🏗️ Project Folder Structure
 ```
 data-engineering-sales-lakehouse/
@@ -82,4 +82,14 @@ total_qty
 
 ### Code (Bronze → Silver → Gold)
 📘 Bronze – Ingestion
+```
+df_bronze = (
+    spark.read
+    .format("csv")
+    .option("header", True)
+    .option("inferSchema", True)
+    .load("/Volumes/demo_catalog/raw/sales_volume/sales_large.csv")
+)
 
+df_bronze.write.mode("overwrite").saveAsTable("demo_catalog.raw.bronze_sales")
+```
