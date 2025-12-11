@@ -10,28 +10,28 @@ Architecture
 
 ### 🛠 Technologies Used
 
-- **Databricks**
+- Databricks
 
-- **PySpark**
+- PySpark
 
-- **SQL**
+- SQL
 
-- **Delta Lake**
+- Delta Lake
 
-- **Power BI**
+- Power BI
 
-- **Lakehouse Architecture**
+- Lakehouse Architecture
 
-- **Data Visualization**
+- Data Visualization
 
 ### 🔄 ETL Pipeline
 
 
 1️⃣ Bronze Layer
 
-- **Raw ingestion of CSV**
+- Raw ingestion of CSV
 
-- **No transformations**
+- No transformations
 
 - **Saved as Delta table**
 
