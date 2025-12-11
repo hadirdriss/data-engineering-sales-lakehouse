@@ -1,6 +1,6 @@
 # data-engineering-sales-lakehouse
 
-### Project Overview
+### 📋 Project Overview
 
 This project implements a full Data Lakehouse architecture using Databricks, PySpark, and Power BI.
 The goal is to build an end-to-end ETL pipeline (Bronze → Silver → Gold) that ingests a CSV file, transforms it, aggregates business metrics, and visualizes results in a Power BI dashboard.
@@ -23,6 +23,27 @@ Architecture
 - Lakehouse Architecture
 
 - Data Visualization
+- 
+## 🏗️ Project Folder Structure
+```
+data-engineering-sales-lakehouse/
+│
+├── databricks/
+│     ├── bronze_silver_gold_notebook.py
+│     ├── sql_gold_layer.sql
+│
+├── powerbi/
+│     ├── sales_dashboard.pbix
+│
+├── dataset/
+│     ├── sample_sales.csv
+│
+├── diagrams/
+│     ├── architecture.png
+│     ├── dashboard_preview.png
+│
+└── README.md
+```
 
 ### 🔄 ETL Pipeline
 
