@@ -27,25 +27,25 @@ Architecture
 ### 🔄 ETL Pipeline
 
 
-1️⃣ Bronze Layer
+**1️⃣ Bronze Layer**
 
 - Raw ingestion of CSV
 
 - No transformations
 
-- **Saved as Delta table**
+- Saved as Delta table
 
-2️⃣ Silver Layer
+**2️⃣ Silver Layer**
 
-- **Data cleaning (dropna)**
+- Data cleaning (dropna)
 
-- **Date formatting**
+- Date formatting
 
-- **Added calculated column total = price * quantity**
+- Added calculated column total = price * quantity
 
-3️⃣ Gold Layer
+**3️⃣ Gold Layer**
 
-- **Aggregation by:**
+- Aggregation by:
 
 country
 
@@ -53,7 +53,7 @@ product
 
 order_date
 
--**Metrics:**
+- Metrics:
 
 total_sales
 
