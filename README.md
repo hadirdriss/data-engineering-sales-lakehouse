@@ -68,7 +68,7 @@ data-engineering-sales-lakehouse/
 
 - Aggregation by:
 
-country
+──Country
 
 product
 
